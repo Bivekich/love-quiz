@@ -40,7 +40,7 @@ const App = () => {
                   <form onSubmit={handleLogin} className='login-form'>
                       <input className='input-field' type="text" placeholder='Имя пользователя' value={username}
                              onChange={(e) => setUsername(e.target.value)}/>
-                      <input className='input-field' type="password" placeholder='Имя пользователя' value={password}
+                      <input className='input-field' type="password" placeholder='Пароль' value={password}
                              onChange={(e) => setPassword(e.target.value)}/>
                       <button className='login-button' type='submit'>Войти</button>
                       {loginError && <p className='error-message'>Неверные данные для входа!</p>}
